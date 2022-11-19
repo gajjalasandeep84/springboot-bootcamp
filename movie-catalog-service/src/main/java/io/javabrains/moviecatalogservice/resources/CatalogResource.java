@@ -49,7 +49,9 @@ public class CatalogResource {
 		 * movie.getDescription(), rating.getRating()); })
 		 * .collect(Collectors.toList());
 		 */
+		logger.debug("Testing git"); 
 		
+		System.out.println("Testing Git Commit");
 		List<String>  services=discoveryClient.getServices();
 		UserRating userRating= restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
 		
